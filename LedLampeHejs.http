@@ -1,0 +1,21 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+
+@KortNemtNavn = http://192.168.1.100/api 
+@UserId = ZjF1trs7iE8kKKYDI2P6Yt8HDGhOX89CPzgBJEhd
+
+
+POST {{KortNemtNavn}}
+{"devicetype":"LedLampeLars"}
+
+###
+GET {{KortNemtNavn}}/{{UserId}}/lights/4
+
+###
+
+GET {{KortNemtNavn}}/{{UserId}}/lights/3
+
+###
+PUT {{KortNemtNavn}}/{{UserId}}/lights/4/state
+{
+  "ct": 153
+}
