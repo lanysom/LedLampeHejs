@@ -11,7 +11,6 @@ POST {{KortNemtNavn}}
 GET {{KortNemtNavn}}/{{UserId}}/lights/4
 
 ###
-
 GET {{KortNemtNavn}}/{{UserId}}/lights/3
 
 ###
@@ -19,3 +18,15 @@ PUT {{KortNemtNavn}}/{{UserId}}/lights/4/state
 {
   "ct": 153
 }
+
+###
+GET https://orders.codesamples.dk/api/orders
+
+###
+POST https://orders.codesamples.dk/api/orders/create
+{
+  "orderNumber": 69
+}
+
+###
+PUT https://orders.codesamples.dk/api/orders/3?newState=ReadyForPickup
